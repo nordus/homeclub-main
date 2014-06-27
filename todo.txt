@@ -1,0 +1,6 @@
+CURRENT
+=======
+- npm uninstall 'config' (since we are using server/config/env-config)
+
+FUTURE
+======

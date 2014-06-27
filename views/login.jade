@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form(action='/api/login', method='POST')
+    .container(style='margin-top:60px')
+      .row
+        .col-xs-6
+          h1(style='font-size:72px')
+            i.teal.icon-home
+          .form-group
+            input.form-control(type='email', placeholder='Email', ng-model='user.email', name='email')
+          .form-group
+            input.form-control(type='password', placeholder='Password', name='password')
+          .form-group
+            button.btn.btn-warning(type='submit') Sign in
