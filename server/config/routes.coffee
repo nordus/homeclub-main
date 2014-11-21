@@ -8,9 +8,9 @@ module.exports = (app, config) ->
   
   app.get '/', require "#{envConfig.rootPath}/../homeclub-frontend"
   app.get '/cms', require "#{envConfig.rootPath}/../homeclub-frontend"
+  app.use '/cms', require "#{envConfig.rootPath}/../homeclub-frontend"
   app.get '/partials/*', require "#{envConfig.rootPath}/../homeclub-frontend"
   app.get '/cms-pages/*', require "#{envConfig.rootPath}/../homeclub-frontend"
-  app.post '/cms/*', require "#{envConfig.rootPath}/../homeclub-frontend"
   app.use express.static "#{envConfig.rootPath}/../homeclub-frontend/public"
   
   app.use '/api', require "#{envConfig.rootPath}/../homeclub-api"
