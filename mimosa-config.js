@@ -11,6 +11,7 @@ exports.config = {
     "bower",
     "coffeescript",
     "less",
-    "jade"
+    "jade",
+    "web-package"
   ]
 }
