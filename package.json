@@ -7,7 +7,6 @@
     "jade": "0.35.0",
     "coffee-script": "1.6.3",
     "express": "4.10.3",
-    "serve-favicon": "~2.2.0",
     "body-parser": "~1.0.2",
     "method-override": "~1.0.0",
     "compression": "~1.0.1",

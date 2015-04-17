@@ -7,7 +7,6 @@ express   = require 'express'
 engines   = require 'consolidate'
 #routes    = require './routes'  # routes are in /server/config/routes
 
-favicon         = require 'serve-favicon'
 bodyParser      = require 'body-parser'
 methodOverride  = require 'method-override'
 compress        = require 'compression'
@@ -26,7 +25,6 @@ exports.startServer = (config, callback) ->
   app.set 'views', config.server.views.path
   app.engine config.server.views.extension, engines[config.server.views.compileWith]
   app.set 'view engine', config.server.views.extension
-  app.use favicon()
 
   #app.use express.urlencoded()
   #app.use express.json()
