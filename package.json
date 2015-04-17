@@ -11,8 +11,7 @@
     "body-parser": "~1.0.2",
     "method-override": "~1.0.0",
     "compression": "~1.0.1",
-    "errorhandler": "~1.0.0",
-    "forever-monitor": "~1.2.3"
+    "errorhandler": "~1.0.0"
   },
   "devDependencies": {
     "mimosa-coffeescript": "*",
