@@ -7,7 +7,7 @@ express   = require 'express'
 engines   = require 'consolidate'
 #routes    = require './routes'  # routes are in /server/config/routes
 
-favicon         = require 'static-favicon'
+favicon         = require 'serve-favicon'
 bodyParser      = require 'body-parser'
 methodOverride  = require 'method-override'
 compress        = require 'compression'
