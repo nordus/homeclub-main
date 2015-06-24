@@ -1,8 +1,6 @@
 http = require('http')
 http.globalAgent.maxSockets = Number.MAX_VALUE
 
-process.env.PORT = 3000
-
 express   = require 'express'
 engines   = require 'consolidate'
 #routes    = require './routes'  # routes are in /server/config/routes
