@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "description": "A Mimosa starter skeleton",
   "dependencies": {
-    "consolidate": "0.10.0",
-    "jade": "0.35.0",
-    "coffee-script": "1.6.3",
-    "express": "4.10.3",
     "body-parser": "~1.0.2",
-    "method-override": "~1.0.0",
+    "coffee-script": "1.6.3",
     "compression": "~1.0.1",
-    "errorhandler": "~1.0.0"
+    "consolidate": "0.10.0",
+    "errorhandler": "~1.0.0",
+    "express": "4.10.3",
+    "express-csv": "^0.6.0",
+    "jade": "0.35.0",
+    "method-override": "~1.0.0"
   },
   "devDependencies": {
     "mimosa-coffeescript": "*",
