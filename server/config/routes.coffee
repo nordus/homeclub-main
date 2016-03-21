@@ -16,7 +16,7 @@ module.exports = (app, config) ->
     if isMobile
       options =
         root: "#{envConfig.rootPath}/../homeclub-mobile/www"
-      res.sendFile 'index.html', options
+      res.sendFile 'app-download.html', options
     else
       res.render 'login'
   app.get '/cms', require "#{envConfig.rootPath}/../homeclub-frontend"
