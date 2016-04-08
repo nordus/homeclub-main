@@ -11,12 +11,22 @@ methodOverride  = require 'method-override'
 compress        = require 'compression'
 errorHandler    = require 'errorhandler'
 
+fs    = require 'fs'
+https = require 'https'
+
+sslOptions =
+  key   : fs.readFileSync(__dirname + '/www_homeclub_us.key')
+  cert  : fs.readFileSync(__dirname + '/www_homeclub_us.crt')
+
+
 exports.startServer = (config, callback) ->
 
   port = process.env.PORT or config.server.port
+  httpsPort = 3001
 
   app = module.exports = express()
-  server = config.httpServer = app.listen port, ->
+#  server = config.httpServer = app.listen port, ->
+  server = config.httpServer = https.createServer(sslOptions, app).listen httpsPort, ->
     console.log "Express server listening on port %d in %s mode", server.address().port, app.settings.env
 
   #app.configure ->
