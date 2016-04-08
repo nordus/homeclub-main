@@ -27,6 +27,6 @@
     "update:main": "git clone git@github.com:nordus/homeclub-main.git tmp/homeclub-main && cd tmp/homeclub-main && npm install && mimosa build -omp && mv dist ../../optimized/homeclub-main",
     "update:mobile": "git clone git@github.com:nordus/homeclub-mobile.git optimized/homeclub-mobile",
     "update": "rm -rf optimized tmp && mkdir optimized tmp && parallelshell 'npm run update:admin' 'npm run update:api' 'npm run update:consumer' 'npm run update:frontend' 'npm run update:main' 'npm run update:mobile'",
-    "serve": "forever start --killSignal=SIGTERM optimized/homeclub-main/dist/app.js"
+    "serve": "forever start --killSignal=SIGTERM optimized/homeclub-main/app.js"
   }
 }

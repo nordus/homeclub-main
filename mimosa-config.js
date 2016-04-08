@@ -13,11 +13,5 @@ exports.config = {
     "less",
     "jade",
     "web-package"
-  ],
-  server: {
-    defaultServer: {
-      enabled: false
-    },
-    path: 'https-server.coffee'
-  }
+  ]
 }
