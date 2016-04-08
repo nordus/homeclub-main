@@ -18,6 +18,6 @@ exports.config = {
     defaultServer: {
       enabled: false
     },
-    path: 'https-server.js'
+    path: 'https-server.coffee'
   }
 }
